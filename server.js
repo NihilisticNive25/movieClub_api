@@ -14,11 +14,11 @@ const movieList = require('./Controllers/movieList');
 const latestMovie = require('./Controllers/latestMovie');
 
 const db = knex({
-  client: 'pg',
-  connection: {
-    connectionstring : process.env.DATABASE_URL,
-    ssl:true,
-  }
+	  client: 'pg',
+	  connection: {
+	    connectionString : process.env.DATABASE_URL,
+	    ssl : true
+	  }
 })
 
 app.use(cors());
